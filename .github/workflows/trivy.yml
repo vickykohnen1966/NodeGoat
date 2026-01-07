@@ -10,5 +10,6 @@ jobs:
         with:
           scan-type: 'fs'
           format: 'table'
-          severity: 'HIGH,CRITICAL'
-          exit-code: '0' # Don't fail the build, just report
+          severity: 'CRITICAL'
+          ignore-unfixed: 'true'
+          exit-code: '1' # Fail the build
